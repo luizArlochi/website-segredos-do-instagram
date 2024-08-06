@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-image: url('./assets/background.png');
+  background-size: 135%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header-background {
+  position: relative; /* Necessário para o posicionamento absoluto do pseudo-elemento */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+}
+
+.header-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url('./assets/whats-message-removebg-preview.png');
+  background-repeat: repeat;
+  background-size: cover; /* Ajuste se necessário */
+  background-position: center; /* Ajuste se necessário */
+  opacity: 0.5; /* Define a transparência */
+  z-index: -1; /* Garante que o background fique atrás do texto */
+}
+
