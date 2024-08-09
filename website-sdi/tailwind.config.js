@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-green': 'linear-gradient(to right, rgba(10, 169, 111, 0.1) 0%, rgba(10, 169, 111, 0.65) 50%, rgba(10, 169, 111, 0.5) 100%)',
+      },
       colors: {
         'custom-blue': '#133D5E',
         'custom-green': '#09A46C',

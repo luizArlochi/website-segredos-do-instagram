@@ -3,8 +3,9 @@ import Header from './components/Header';
 import Feedback from './components/Feedback';
 import Trail from './components/Trail';
 import GiftBox from './components/GiftBox';
-import './App.css';
 import Video from './components/Video';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
       </div>
       <Video />
       <Feedback />
-      {/* <Trail /> */}
-      {/* <GiftBox /> */}
+      <Trail />
+      <GiftBox />
+      <Footer />
     </div>
   )
 }
