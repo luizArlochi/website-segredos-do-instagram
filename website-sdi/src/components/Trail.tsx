@@ -5,10 +5,10 @@ const Trail: React.FC = () => {
   const { isMobile } = useDeviceType();
 
   const trailItems = [
-    { image: 'website-segredos-do-instagram/src/assets/chess-img.png', text: 'ESTRATÉGIAS DE CONTEÚDO VENCEDORA' },
-    { image: 'website-segredos-do-instagram/src/assets/eye-img.png', text: 'IDENTIDADE VISUAL DA MARCA IMPACTANTE' },
-    { image: 'website-segredos-do-instagram/src/assets/brain-img.png', text: 'COMPREENSÃO DO ALGORITMO DO INSTAGRAM' },
-    { image: 'website-segredos-do-instagram/src/assets/click-img.png', text: 'ESTRATÉGIAS AVANÇADAS DE CRESCIMENTO' },
+    { image: 'src/assets/chess-img.png', text: 'ESTRATÉGIAS DE CONTEÚDO VENCEDORA' },
+    { image: 'src/assets/eye-img.png', text: 'IDENTIDADE VISUAL DA MARCA IMPACTANTE' },
+    { image: 'src/assets/brain-img.png', text: 'COMPREENSÃO DO ALGORITMO DO INSTAGRAM' },
+    { image: 'src/assets/click-img.png', text: 'ESTRATÉGIAS AVANÇADAS DE CRESCIMENTO' },
   ];
 
   return (

@@ -9,14 +9,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: "/website-segredos-do-instagram",
+  base: "/",
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
-    },
-  },
+    chunkSizeWarningLimit: 3000,
+  }
 });

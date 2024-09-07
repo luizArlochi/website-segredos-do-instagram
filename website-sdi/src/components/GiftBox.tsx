@@ -6,11 +6,11 @@ const GiftBox: React.FC = () => {
   const { isMobile } = useDeviceType();
 
   const carouselImages = [
-    'website-segredos-do-instagram/src/assets/grow-img.png',
-    'website-segredos-do-instagram/src/assets/robot-img.png',
-    'website-segredos-do-instagram/src/assets/giftbox.png',
-    'website-segredos-do-instagram/src/assets/cell-img.png',
-    'website-segredos-do-instagram/src/assets/support-img.png',
+    'src/assets/grow-img.png',
+    'src/assets/robot-img.png',
+    'src/assets/giftbox.png',
+    'src/assets/cell-img.png',
+    'src/assets/support-img.png',
   ];
 
   return (
