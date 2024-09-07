@@ -10,4 +10,13 @@ export default defineConfig({
     },
   },
   base: "/website-segredos-do-instagram",
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+      },
+    },
+  },
 });
