@@ -8,9 +8,8 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-
   return (
-    <div>
+    <div className="">
       <div className="header-background">
         <Header />
       </div>
@@ -20,7 +19,7 @@ function App() {
       <GiftBox />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

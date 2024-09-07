@@ -1,24 +1,42 @@
 import React from 'react';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+import { useDeviceType } from '@/utils/DevicesTypes';
 
 const GiftBox: React.FC = () => {
+  const { isMobile } = useDeviceType();
+
+  const carouselImages = [
+    'website-segredos-do-instagram/src/assets/grow-img.png',
+    'website-segredos-do-instagram/src/assets/robot-img.png',
+    'website-segredos-do-instagram/src/assets/giftbox.png',
+    'website-segredos-do-instagram/src/assets/cell-img.png',
+    'website-segredos-do-instagram/src/assets/support-img.png',
+  ];
+
   return (
-    <section className="py-8">
-        <h1 className="mt-10 text-white text-4xl md:text-4xl font-bold text-center mb-4">
-          São 10 capítulos que farão você dominar o Instagram sem investir em trafego pago! 🚀
-        </h1>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-        <img
-          src="src/assets/giftbox-image-removebg-preview.png"
-          alt="Imagem 1"
-          className="w-[800px] h-[800px] rounded-lg"
-        />
-        <img
-          src="src/assets/tag-image-removebg-preview.png"
-          alt="Imagem 2"
-          className="w-[800px] h-[800px] rounded-lg"
-        />
-      </div>
-    </section>
+    <div className="py-8 relative">
+      <Carousel
+        opts={{
+          align: 'start',
+        }}
+        className="relative w-[90%] max-w-[1050px] mx-auto overflow-visible"
+      >
+        {!isMobile && (
+          <>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600"/>
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600"/>
+          </>
+        )}
+
+        <CarouselContent className="flex p-2">
+          {carouselImages.map((image, index) => (
+            <CarouselItem key={index} className="w-full md:basis-1/2 lg:basis-1/2 p-2">
+              <img src={image} alt={`Feedback ${index + 1}`} className="rounded-2xl w-full h-full" />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+    </div>
   );
 }
 
