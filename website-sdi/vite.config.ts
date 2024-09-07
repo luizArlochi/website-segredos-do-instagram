@@ -9,7 +9,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: "/",
+  base: "/website-segredos-do-instagram",
   build: {
     chunkSizeWarningLimit: 3000,
   }
