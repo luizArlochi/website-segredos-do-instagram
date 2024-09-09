@@ -12,5 +12,6 @@ export default defineConfig({
   base: "/website-segredos-do-instagram",
   build: {
     chunkSizeWarningLimit: 3000,
+    assetsDir: 'assets',
   }
 });
