@@ -4,7 +4,7 @@ import PriceBox from "../assets/price-box-img.png"
 const Footer: React.FC = () => {
   return (
     <footer className="py-8 text-center mb-28">
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <img
           src={PriceBox}
           alt="Price Box"
