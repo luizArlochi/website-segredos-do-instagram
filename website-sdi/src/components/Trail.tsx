@@ -24,23 +24,16 @@ const Trail: React.FC = () => {
       <div className="mt-16">
         <h1 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
           ACOMPANHAMENTO SEMANAL PARA
-          <span className="text-red-700">
-            QUALQUER DÚVIDA!
-          </span> 📈
+          <span className="text-red-700"> QUALQUER DÚVIDA! </span> 📈
         </h1>
         <h2 className="text-3xl text-white mb-8">
-          Estamos aqui para
-          <span className="text-red-700">
-            garantir
-          </span>
-            que
-          <span className="text-red-700">
-            </span>
-              tenha o
-            <span className="font-bold">
-              entendimento total do Instagram.
-            </span>
-          </h2>
+          Estamos aqui para 
+          <span className="text-red-700"> garantir </span>
+          que
+          <span className="text-red-700"> você </span>
+          tenha o
+          <span className="font-bold"> entendimento total do Instagram. </span>
+        </h2>
 
         <div className="w-full h-2 bg-[#133D5E] mb-4 rounded-full" />
 
