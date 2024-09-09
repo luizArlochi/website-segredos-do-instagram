@@ -53,7 +53,7 @@ const Trail: React.FC = () => {
               <img
                 src={item.image}
                 alt={`Trail ${index + 1}`}
-                style={{ width: isMobile ? '144px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
+                style={{ width: isMobile ? '100px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
                 className={`${isMobile ? 'max-w-[300px]' : 'md:w-80'} h-auto rounded-lg`}
               />
               <p className={`mt-4 ${isMobile ? 'text-center text-xs font-bold ml-10' : 'md:text-left md:ml-8'} text-xl md:text-3xl text-gray-200`}>
