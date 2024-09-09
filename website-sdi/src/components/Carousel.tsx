@@ -1,16 +1,21 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { useDeviceType } from '@/utils/DevicesTypes';
+import GrowImg from "../assets/support-img.png"
+import RobotImg from "../assets/robot-img.png"
+import GiftBoxImg from "../assets/giftbox.png"
+import CellImg from "../assets/cell-img.png"
+import SupportImg from "../assets/support-img.png"
 
-const GiftBox: React.FC = () => {
+const CarouselInfo: React.FC = () => {
   const { isMobile } = useDeviceType();
 
   const carouselImages = [
-    '/website-segredos-do-instagram/src/assets/grow-img.png',
-    '/website-segredos-do-instagram/src/assets/robot-img.png',
-    '/website-segredos-do-instagram/src/assets/giftbox.png',
-    '/website-segredos-do-instagram/src/assets/cell-img.png',
-    '/website-segredos-do-instagram/src/assets/support-img.png',
+    GrowImg,
+    RobotImg,
+    GiftBoxImg,
+    CellImg,
+    SupportImg,
   ];
 
   return (
@@ -40,4 +45,4 @@ const GiftBox: React.FC = () => {
   );
 }
 
-export default GiftBox;
+export default CarouselInfo;

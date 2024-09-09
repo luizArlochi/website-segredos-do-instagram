@@ -1,14 +1,18 @@
 import React from 'react';
 import { useDeviceType } from '@/utils/DevicesTypes';
+import ChessImg from "../assets/chess-img.png";
+import EyeImg from "../assets/eye-img.png";
+import BrainImg from "../assets/brain-img.png";
+import ClickImg from "../assets/click-img.png";
 
 const Trail: React.FC = () => {
   const { isMobile } = useDeviceType();
 
   const trailItems = [
-    { image: '/website-segredos-do-instagram/src/assets/chess-img.png', text: 'ESTRATÉGIAS DE CONTEÚDO VENCEDORA' },
-    { image: '/website-segredos-do-instagram/src/assets/eye-img.png', text: 'IDENTIDADE VISUAL DA MARCA IMPACTANTE' },
-    { image: '/website-segredos-do-instagram/src/assets/brain-img.png', text: 'COMPREENSÃO DO ALGORITMO DO INSTAGRAM' },
-    { image: '/website-segredos-do-instagram/src/assets/click-img.png', text: 'ESTRATÉGIAS AVANÇADAS DE CRESCIMENTO' },
+    { image: ChessImg, text: 'ESTRATÉGIAS DE CONTEÚDO VENCEDORA' },
+    { image: EyeImg, text: 'IDENTIDADE VISUAL DA MARCA IMPACTANTE' },
+    { image: BrainImg, text: 'COMPREENSÃO DO ALGORITMO DO INSTAGRAM' },
+    { image: ClickImg, text: 'ESTRATÉGIAS AVANÇADAS DE CRESCIMENTO' },
   ];
 
   return (
