@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { useDeviceType } from '@/utils/DevicesTypes';
-import GrowImg from "../assets/support-img.png"
+import GrowImg from "../assets/grow-img.png"
 import RobotImg from "../assets/robot-img.png"
 import GiftBoxImg from "../assets/giftbox.png"
 import CellImg from "../assets/cell-img.png"
