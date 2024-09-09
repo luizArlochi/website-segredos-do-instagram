@@ -1,4 +1,5 @@
 import React from 'react';
+import FeedbackImg from "../assets/feedback-image.png"
 
 const Feedback: React.FC = () => {
 
@@ -8,7 +9,7 @@ const Feedback: React.FC = () => {
         <p className="text-4xl md:text-5xl font-bold">FEEDBACK DOS ALUNOS:</p>
       </div>
     <div className="py-8 flex justify-center">
-      <img className="rounded-2xl" src="./website-segredos-do-instagram/src/assets/feedback-image.png" alt="Feedbackkk" />
+      <img className="rounded-2xl" src={FeedbackImg} alt="Feedback" />
     </div>
     </div>
   );
