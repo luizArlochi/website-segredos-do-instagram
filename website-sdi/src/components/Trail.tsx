@@ -16,7 +16,7 @@ const Trail: React.FC = () => {
   ];
 
   return (
-    <section className="py-8 px-4">
+    <section className="py-8">
       <div className="bg-gradient-green text-white text-center h-28 flex items-center justify-center">
         <p className="text-4xl md:text-5xl font-bold">Grupo de networking disponível no final do E-book</p>
       </div>
