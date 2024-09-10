@@ -49,7 +49,7 @@ const Trail: React.FC = () => {
                 style={{ width: isMobile ? '80px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
                 className={`${isMobile ? 'max-w-[300px]' : 'md:w-80'} h-auto rounded-lg`}
               />
-              <p className={`mt-4 ${isMobile ? 'text-center text-xs font-bold ml-10' : 'md:text-left md:ml-8'} text-xl md:text-3xl text-gray-200`}>
+              <p className={`mt-4 ${isMobile ? 'text-center text-3xl font-bold ml-10' : 'md:text-left md:ml-8'} text-xl md:text-3xl text-gray-200`}>
                 {item.text}
               </p>
               {index < trailItems.length - 1 && (

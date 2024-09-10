@@ -6,13 +6,13 @@ const Header: React.FC = () => {
 
   return (
     <header className={`text-center text-white py-1 ${isMobile ? 'mt-7 px-4' : 'mt-16 px-0'}`}>
-      <h1 className={`text-custom-blue font-bold ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
+      <h1 className={`text-custom-blue font-bold ${isMobile ? 'text-3xl' : 'text-6xl'}`}>
         SEGREDOS
       </h1>
-      <h1 className={`font-bold ${isMobile ? 'text-4xl' : 'text-9xl'}`}>
+      <h1 className={`font-bold ${isMobile ? 'text-5xl' : 'text-9xl'}`}>
         DO IN$TAGRAM
       </h1>
-      <h1 className={`mt-1 mb-2 ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
+      <h1 className={`mt-1 mb-2 ${isMobile ? 'text-3xl' : 'text-6xl'}`}>
         PARA
         <span className="text-custom-green"> VIRALIZAR </span>
         &
