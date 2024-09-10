@@ -20,7 +20,7 @@ const Video: React.FC = () => {
       </div>
 
       <p className="text-white text-2xl md:text-3xl font-bold text-center mt-16 gotham-font">
-        E-BOOK QUE OS SOCIAIS MIDIA ESCONDEM DE VOCÊ. 🤫
+        E-BOOK QUE OS SOCIAIS MEDIA ESCONDEM DE VOCÊ. 🤫
       </p>
 
       <button className="mt-16 px-10 py-7 bg-red-600 text-white text-xl font-semibold rounded-[50px] shadow-md hover:bg-red-700 transition duration-300 gotham-font">
