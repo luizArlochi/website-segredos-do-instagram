@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gotham Condensed';
+    src: local('Gotham Condensed Light'), local('Gotham-Condensed-Light'),
+        url('GothamCond-Light.woff2') format('woff2'),
+        url('GothamCond-Light.woff') format('woff'),
+        url('GothamCond-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

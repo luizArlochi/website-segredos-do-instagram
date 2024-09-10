@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  font-family: 'Gotham Condensed', sans-serif;
   background-image: url('./assets/background.png');
   background-size: 135%;
   background-position: center center;
@@ -14,8 +15,8 @@ body {
 }
 
 .header-background {
-  position: relative; /* Necessário para o posicionamento absoluto do pseudo-elemento */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+  position: relative;
+  overflow: hidden;
 }
 
 .header-background::before {
@@ -26,37 +27,41 @@ body {
   width: 50%;
   height: 50%;
   background-repeat: repeat;
-  background-size: cover; /* Ajuste se necessário */
-  background-position: center; /* Ajuste se necessário */
-  opacity: 0.5; /* Define a transparência */
-  z-index: -1; /* Garante que o background fique atrás do texto */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
   body {
-    background-size: cover; /* Garante que a imagem cubra toda a tela em dispositivos móveis */
-    background-position: center top; /* Ajuste o posicionamento da imagem para exibir a parte mais atraente */
+    background-size: cover;
+    background-position: center top;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-position: center top; /* Garante que a imagem se ajuste bem em telas muito pequenas */
+    background-position: center top;
   }
 }
 
 html {
-  font-size: 16px; /* Tamanho base para desktops */
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* Tamanho reduzido para dispositivos móveis */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
+  body {
+    background-position: center top;
+    background-size: 217%;
+  }
   html {
-    font-size: 12px; /* Tamanho ainda menor para telas muito pequenas */
+    font-size: 12px;
   }
 }
