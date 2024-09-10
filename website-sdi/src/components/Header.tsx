@@ -27,8 +27,10 @@ const Header: React.FC = () => {
         {' COM '}
         <span className="text-red-700">ANÚNCIOS</span>
         :
-      <h3>O GUIA DEFINITIVO COM ESTRATÉGIAS SECRETAS QUE INFLUENCIADORES DE SUCESSO ESTÃO USANDO AGORA!</h3>
       </h3>
+      <p className={`font-bold ${isMobile ? 'text-1xl' : 'text-2xl'} leading-relaxed ${!isMobile ? 'max-w-4xl mx-auto' : ''}`}>
+        O GUIA DEFINITIVO COM ESTRATÉGIAS SECRETAS QUE INFLUENCIADORES DE SUCESSO ESTÃO USANDO AGORA!
+      </p>
     </header>
   );
 }
