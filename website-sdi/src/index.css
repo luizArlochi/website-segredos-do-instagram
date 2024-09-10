@@ -33,6 +33,11 @@ body {
   z-index: -1;
 }
 
+.no-paragraph-font {
+  font-family: sans-serif; /* Ou outra fonte padrão que você desejar */
+}
+
+
 @media (max-width: 768px) {
   body {
     background-size: cover;
@@ -59,7 +64,6 @@ html {
 @media (max-width: 480px) {
   body {
     background-position: center top;
-    background-size: 217%;
   }
   html {
     font-size: 12px;
