@@ -21,12 +21,12 @@ const Trail: React.FC = () => {
         <p className="text-2xl md:text-5xl font-bold no-paragraph-font">Grupo de networking disponível no final do E-book</p>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-16 ">
         <h1 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
           ACOMPANHAMENTO SEMANAL PARA
           <span className="text-red-700"> QUALQUER DÚVIDA! </span> 📈
         </h1>
-        <h2 className="text-3xl text-white mb-8">
+        <h2 className="text-3xl text-white mb-8 no-paragraph-font">
           Estamos aqui para 
           <span className="text-red-700"> garantir </span>
           que
@@ -49,7 +49,7 @@ const Trail: React.FC = () => {
                 style={{ width: isMobile ? '80px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
                 className={`${isMobile ? 'max-w-[300px]' : 'md:w-80'} h-auto rounded-lg`}
               />
-              <p className={`mt-4 ${isMobile ? 'text-center text-3xl font-bold ml-10' : 'md:text-left md:ml-8'} text-xl md:text-3xl text-gray-200`}>
+              <p className={`mt-4 gotham-font ${isMobile ? 'text-center text-3xl font-bold ml-10' : 'md:text-left md:ml-8'} text-xs md:text-3xl text-gray-200`}>
                 {item.text}
               </p>
               {index < trailItems.length - 1 && (

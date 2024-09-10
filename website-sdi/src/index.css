@@ -37,6 +37,10 @@ body {
   font-family: sans-serif; /* Ou outra fonte padrão que você desejar */
 }
 
+.gotham-font {
+  font-family: 'GothamFont', sans-serif;
+}
+
 
 @media (max-width: 768px) {
   body {
