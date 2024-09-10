@@ -1,11 +1,13 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
 import { useDeviceType } from '@/utils/DevicesTypes';
-import GrowImg from "../assets/grow-img.png"
-import RobotImg from "../assets/robot-img.png"
-import GiftBoxImg from "../assets/giftbox.png"
-import CellImg from "../assets/cell-img.png"
-import SupportImg from "../assets/support-img.png"
+import GrowImg from "../assets/grow-img.png";
+import RobotImg from "../assets/robot-img.png";
+import GiftBoxImg from "../assets/giftbox.png";
+import CellImg from "../assets/cell-img.png";
+import SupportImg from "../assets/support-img.png";
+import SetaEsquerda from "../assets/seta-esquerda.png";
+import SetaDireita from "../assets/seta-direita.png";
 
 const CarouselInfo: React.FC = () => {
   const { isMobile } = useDeviceType();
@@ -19,17 +21,26 @@ const CarouselInfo: React.FC = () => {
   ];
 
   return (
-    <div className="py-8 relative">
+    <div className="py-3 relative">
       <Carousel
         opts={{
           align: 'start',
         }}
         className="relative w-[90%] max-w-[1050px] mx-auto overflow-visible"
       >
-        {!isMobile && (
+        {isMobile ? (
           <>
-            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600"/>
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600"/>
+            <button className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
+              <img src={SetaEsquerda} alt="Seta Esquerda" className="w-8 h-8" />
+            </button>
+            <button className="absolute right-3 top-1/2 -translate-y-1/2 z-10">
+              <img src={SetaDireita} alt="Seta Direita" className="w-8 h-8" />
+            </button>
+          </>
+        ) : (
+          <>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hover:bg-green-600" />
           </>
         )}
 

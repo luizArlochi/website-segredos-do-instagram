@@ -3,12 +3,12 @@ import PriceBox from "../assets/price-box-img.png"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-8 text-center mb-28">
+    <footer className="text-center mb-28">
       <div className="flex flex-col items-center">
         <img
           src={PriceBox}
           alt="Price Box"
-          className=" w-[850px] h-auto mb-1" // Centraliza, define largura e arredonda as bordas
+          className=" w-[270px] h-auto mb-5"
         />
       </div>
             <div className="bg-gradient-green text-white text-center h-28 flex items-center justify-center">

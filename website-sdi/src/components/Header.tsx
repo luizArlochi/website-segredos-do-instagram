@@ -5,19 +5,19 @@ const Header: React.FC = () => {
   const { isMobile } = useDeviceType();
 
   return (
-    <header className={`text-center text-white py-8 ${isMobile ? 'mt-20 px-4' : 'mt-16 px-0'}`}>
-      <h1 className={`text-custom-blue ${isMobile ? 'text-4xl' : 'text-6xl'}`}>
+    <header className={`text-center text-white py-1 ${isMobile ? 'mt-7 px-4' : 'mt-16 px-0'}`}>
+      <h1 className={`text-custom-blue font-bold ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
         SEGREDOS
       </h1>
-      <h1 className={`font-bold ${isMobile ? 'text-6xl' : 'text-9xl'}`}>
+      <h1 className={`font-bold ${isMobile ? 'text-4xl' : 'text-9xl'}`}>
         DO IN$TAGRAM
       </h1>
-      <h2 className={`font-semibold mt-4 ${isMobile ? 'text-4xl' : 'text-6xl'}`}>
+      <h1 className={`mt-4 ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
         PARA
         <span className="text-custom-green"> VIRALIZAR </span>
         &
         <span className="text-custom-green"> VENDER </span>
-      </h2>
+      </h1>
       <h3 className={`font-bold ${isMobile ? 'text-1xl' : 'text-2xl'} leading-relaxed ${!isMobile ? 'max-w-4xl mx-auto' : ''}`}>
         <span className="text-red-700">VIRALIZE</span>
         {' NO '}

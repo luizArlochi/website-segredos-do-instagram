@@ -18,7 +18,7 @@ const Trail: React.FC = () => {
   return (
     <section className="py-8">
       <div className="bg-gradient-green text-white text-center h-28 flex items-center justify-center">
-        <p className="text-4xl md:text-5xl font-bold">Grupo de networking disponível no final do E-book</p>
+        <p className="text-2xl md:text-5xl font-bold">Grupo de networking disponível no final do E-book</p>
       </div>
 
       <div className="mt-16">
@@ -46,7 +46,7 @@ const Trail: React.FC = () => {
               <img
                 src={item.image}
                 alt={`Trail ${index + 1}`}
-                style={{ width: isMobile ? '100px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
+                style={{ width: isMobile ? '80px' : '320px', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
                 className={`${isMobile ? 'max-w-[300px]' : 'md:w-80'} h-auto rounded-lg`}
               />
               <p className={`mt-4 ${isMobile ? 'text-center text-xs font-bold ml-10' : 'md:text-left md:ml-8'} text-xl md:text-3xl text-gray-200`}>
