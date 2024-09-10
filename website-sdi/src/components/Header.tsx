@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <h1 className={`font-bold ${isMobile ? 'text-4xl' : 'text-9xl'}`}>
         DO IN$TAGRAM
       </h1>
-      <h1 className={`mt-4 ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
+      <h1 className={`mt-1 mb-2 ${isMobile ? 'text-2xl' : 'text-6xl'}`}>
         PARA
         <span className="text-custom-green"> VIRALIZAR </span>
         &
@@ -26,7 +26,8 @@ const Header: React.FC = () => {
         <span className="text-red-700">GASTAR</span>
         {' COM '}
         <span className="text-red-700">ANÚNCIOS</span>
-        : O GUIA DEFINITIVO COM ESTRATÉGIAS SECRETAS QUE INFLUENCIADORES DE SUCESSO ESTÃO USANDO AGORA!
+        :
+      <h3>O GUIA DEFINITIVO COM ESTRATÉGIAS SECRETAS QUE INFLUENCIADORES DE SUCESSO ESTÃO USANDO AGORA!</h3>
       </h3>
     </header>
   );

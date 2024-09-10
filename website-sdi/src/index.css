@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   background-image: url('./assets/background.png');
   background-size: 135%;
@@ -36,7 +35,13 @@ body {
 @media (max-width: 768px) {
   body {
     background-size: cover; /* Garante que a imagem cubra toda a tela em dispositivos móveis */
-    background-position: center center; /* Mantém a imagem centralizada */
+    background-position: center top; /* Ajuste o posicionamento da imagem para exibir a parte mais atraente */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-position: center top; /* Garante que a imagem se ajuste bem em telas muito pequenas */
   }
 }
 
