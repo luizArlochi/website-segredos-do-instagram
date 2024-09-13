@@ -1,5 +1,5 @@
 import React from 'react';
-import PriceBox from "../assets/price-box-img.png"
+import PriceBox from "../assets/price-box.png"
 
 const Footer: React.FC = () => {
   return (
